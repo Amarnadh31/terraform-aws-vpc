@@ -3,20 +3,20 @@ VPC Module
 This module is going to create the following resources. for HA we are going to get first 2 AZ.
 
 VPC
-Internet Gateway associated with VPC
-2 Public Subnets
-2 Private Subnets
-2 Database Subnets
-Database subnet group
-EIP
-NAT Gateway
-Public Route table
-Private Route table
-Database Route table
-Routes
-Route table associations with subnets
-Peering with default VPC(if Required)
-Peering routes in acceptor and requestor route tables
+* Internet Gateway associated with VPC
+* 2 Public Subnets
+* 2 Private Subnets
+* 2 Database Subnets
+* Database subnet group
+* EIP
+* NAT Gateway
+* Public Route table
+* Private Route table
+* Database Route table
+* Routes
+* Route table associations with subnets
+* Peering with default VPC(if Required)
+* Peering routes in acceptor and requestor route tables
 
 
 
