@@ -6,7 +6,7 @@ resource "aws_vpc" "main" {
     var.common_tags,
     var.vpc_tags,
     {
-        Name = local.resource_name
+        Name = local.resource_name # project_name+environment
     }
   )    
   
@@ -29,7 +29,7 @@ resource "aws_subnet" "public" {
     vpc_id     = aws_vpc.main.id
     cidr_block = var.public_subnet_cidr[count.index]
     availability_zone = local.az_names [count.index]
-    map_public_ip_on_launch = true
+    map_public_ip_on_launch = true # by default public ip mapping is false
 
     tags = merge (
         var.common_tags,
