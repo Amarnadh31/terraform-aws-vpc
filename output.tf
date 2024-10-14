@@ -27,6 +27,10 @@ output "database_route_id" {
     value = aws_route_table.database.id
 }
 
+output "database_group_name"{
+    value = aws_db_subnet_group.default.id
+}
+
 # output "az_id" {
 #     value = data.aws_availability_zones.available
 # }
